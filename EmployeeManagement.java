@@ -53,12 +53,12 @@ public class EmployeeManagement {
         }
     }
 
-    // 🔹 Get Connection
+    //  Get Connection
     static Connection getConnection() throws Exception {
         return DriverManager.getConnection(URL, USER, PASSWORD);
     }
 
-    // 🔹 INSERT
+    //  INSERT
     static void addEmployee() {
 
         try (Connection con = getConnection()) {
@@ -92,7 +92,7 @@ public class EmployeeManagement {
         }
     }
 
-    // 🔹 SELECT
+    //  SELECT
     static void viewEmployees() {
 
         try (Connection con = getConnection()) {
@@ -120,7 +120,7 @@ public class EmployeeManagement {
         }
     }
 
-    // 🔹 UPDATE
+    //  UPDATE
     static void updateEmployee() {
 
         try (Connection con = getConnection()) {
@@ -154,7 +154,7 @@ public class EmployeeManagement {
         }
     }
 
-    // 🔹 DELETE
+    //  DELETE
     static void deleteEmployee() {
 
         try (Connection con = getConnection()) {
@@ -179,3 +179,4 @@ public class EmployeeManagement {
         }
     }
 }
+
